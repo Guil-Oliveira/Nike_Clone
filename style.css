@@ -3,11 +3,21 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
-}
-
-a{
+  list-style-type: none;
   text-decoration:none;
   color: inherit;
+}
+@font-face {
+   font-family: GilroyBold;
+   src: url(./font/Gilroy-Bold.ttf);
+}
+@font-face {
+   font-family: GilroyMedium;
+   src: url(./font/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: GilroySemiBold;
+  src: url(/font/Gilroy-SemiBold.ttf);
 }
 
 .aside{
@@ -15,6 +25,9 @@ a{
   margin: 20px 20px 20px 20px;
   justify-content: space-around;
   padding: 0 0 20px 0;
+  font-family: GilroySemiBold;
+  font-size: 14px;
+  text-align: center;
 }
 
 .menu{
@@ -24,4 +37,82 @@ a{
 
 .menu h3{
   padding: 0 20px;
+}
+
+.main_initial img{
+  width: 80vw;
+  display: block;
+  margin: 0px auto;
+  padding-bottom: 60px;
+}
+
+.cart{
+  width: 24px;
+  height: 24px;
+}
+
+.social_media{
+  display: flex;
+}
+
+.social_media img{
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  margin: 0 4px 0 4px;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 0 40px 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer h4{
+  font-size: 18px;
+  font-family: GilroyBold;
+}
+
+
+.footer li{
+  font-family: GilroyMedium;
+  padding: 5px 0 2px 0;
+}
+
+.font{
+  font-family: Gilroy BlackFont;
+}
+
+.social div{
+  margin-top: 15px;
+}
+
+.child img:last-child{
+  width: 24px;
+  height: 24px;
+  margin: 0 0 0 10px;
+}
+
+.child ul{
+  display: flex;
+}
+
+.footer_asideAbout{
+  margin-top: 15px;
+}
+
+.footer_asideAbout li{
+  font-size: 12px;
+}
+
+.footer ul{
+  margin-top: 10px;
+}
+
+@media (max-width:480px) {
+  .aside{
+    display: none;
+  }
 }
